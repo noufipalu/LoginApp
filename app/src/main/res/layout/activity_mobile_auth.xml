@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_page"
+    tools:context=".MobileAuthActivity">
+
+    <EditText
+        android:id="@+id/txt_phone"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="215dp"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:textColor="#F3E3E3"
+        android:textColorHint="#F3E3E3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/buttonBackground"
+        android:text="SEND OTP"
+        android:textColor="#F3E3E3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_phone" />
+
+    <EditText
+        android:id="@+id/txt_otp"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:hint="@string/otp"
+        android:inputType="textPersonName"
+        android:textColor="#F3E3E3"
+        android:textColorHint="#F3E3E3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_send" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/buttonBackground"
+        android:text="LOGIN"
+        android:textColor="#F3E3E3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_otp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

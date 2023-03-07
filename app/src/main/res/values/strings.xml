@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LoginApp</string>
+    <string name="name">Enter Your Name</string>
+    <string name="email">Enter Your Email</string>
+    <string name="password">Enter Your Password</string>
+    <string name="confirmpassword">Confirm Your Password</string>
+    <string name="phone">Enter Mobile Number</string>
+    <string name="otp">Enter OTP</string>
+</resources>

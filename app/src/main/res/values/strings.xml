@@ -6,4 +6,6 @@
     <string name="confirmpassword">Confirm Your Password</string>
     <string name="phone">Enter Mobile Number</string>
     <string name="otp">Enter OTP</string>
+    <string name="sendOTP">SEND OTP</string>
+    <string name="verifyotp">VERIFY OTP</string>
 </resources>

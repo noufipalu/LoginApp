@@ -16,6 +16,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -23,6 +25,9 @@ public class LoginActivity extends AppCompatActivity {
     TextView forgot;
     EditText Email, Password;
     FirebaseAuth mAuth;
+    FirebaseUser user;
+    String currentId;
+    FirebaseFirestore firestore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +40,9 @@ public class LoginActivity extends AppCompatActivity {
         Email = findViewById(R.id.email_txt);
         Password = findViewById(R.id.pass_txt);
 
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        currentId = user.getUid();
+        firestore = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
 
         Register.setOnClickListener(new View.OnClickListener() {
@@ -75,7 +83,7 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
-                        Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Logged In Successfully", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(LoginActivity.this, FrontActivity.class);
                         intent.putExtra("Email", mAuth.getCurrentUser().getEmail());
                         startActivity(intent);

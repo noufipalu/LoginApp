@@ -11,11 +11,12 @@
         android:id="@+id/txt_Welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="294dp"
-        android:text="WELCOME TO THE"
+        android:layout_marginTop="264dp"
+        android:text="You have logged in"
         android:textColor="#F3E3E3"
         android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,12 +26,29 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="326dp"
-        android:text="APPLICATION"
+        android:text="as"
         android:textColor="#F3E3E3"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Welcome" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_Welcome"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="403dp"
+        android:layout_marginBottom="309dp"
+        android:textColor="#F3E3E3"
+        android:textSize="40dp"
+        android:textColorHint="#BCB9B9"
+        android:hint="@string/useremail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

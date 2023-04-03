@@ -68,6 +68,7 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+    //to login as an authenticated user
     private void loginUser() {
         String email = Email.getText().toString();
         String pass = Password.getText().toString();

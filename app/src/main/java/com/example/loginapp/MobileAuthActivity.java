@@ -28,9 +28,7 @@ public class MobileAuthActivity extends AppCompatActivity {
 
     EditText phone, otp;
     Button send, verify;
-
     FirebaseAuth mauth;
-
     String phoneNumber;
     String otpid;
 
@@ -48,6 +46,7 @@ public class MobileAuthActivity extends AppCompatActivity {
 
         mauth = FirebaseAuth.getInstance();
 
+        //to get otp in registered mobile number
         verify.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,6 +65,7 @@ public class MobileAuthActivity extends AppCompatActivity {
             }
         });
 
+        //to request the otp
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

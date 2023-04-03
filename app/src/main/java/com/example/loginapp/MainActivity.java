@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //to add into the database
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                         });
 
+                //to create an authenticated user. Athentication using email/password authentication
                 createUser();
             }
         });
@@ -112,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+        // to create a new user if no user is registered
     @Override
     protected void onStart() {
         super.onStart();
